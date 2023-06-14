@@ -18,7 +18,7 @@ from django.core.cache import cache
 api_key = 'sandbox-KI6CjrzdwUzPEE87v8QIcyaOIQ8FCQGi'
 secret_key = 'sandbox-hwiwguARFWGSiNRD1TwpOeK7NnKyKC7Q'
 base_url = 'sandbox-api.iyzipay.com'
-
+# yorum satırı
 
 options = {
     'api_key': api_key,
