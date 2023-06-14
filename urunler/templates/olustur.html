@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <form action="" method="POST" enctype="multipart/form-data" class="w-50 m-auto border p-3">
+        {% csrf_token %}
+                <!-- <label for="">Resim</label>
+        <input type="file" name="resim" id="" class="form-control">
+        <label for="">Kategori</label>
+        <select name="" class="form-control" id="">
+            <option value="">------</option>
+            {% for kategori in kategoriler %}
+                <option value="{{kategori.id}}">{{kategori.isim}}</option>
+            {% endfor %}
+        </select>
+        <label for="">Ürün İsmi</label>
+        <input type="text" name="isim" id="" class="form-control">
+        <label for="">Ürün Açıklaması</label>
+        <textarea class="form-control" name="aciklama" id="" cols="30" rows="5"></textarea>
+        <label for="">Fiyat</label>
+        <input type="number" name="fiyat" id="" class="form-control"> -->
+        {{form}}
+        {{form.media}}
+        <input type="submit" value="Oluştur" class="btn btn-primary">
+    </form>
+</div>
+
+
+{% endblock content %}
